@@ -7,7 +7,7 @@ public class PrimeFinderThread extends Thread{
 
 	
 	int a,b;
-	
+	boolean suspend;
 	private List<Integer> primes=new LinkedList<Integer>();
 	
 	public PrimeFinderThread(int a, int b) {
@@ -22,10 +22,26 @@ public class PrimeFinderThread extends Thread{
 				primes.add(i);
 				System.out.println(i);
 			}
-		}
+		}synchronized(this){
+                    while(suspend){
+                        try{
+                            this.wait();
+                        }catch(InterruptedException e){
+                            System.out.println("error");
+                        }
+                        
+                    }
+                }
 		
 		
 	}
+        public void setSuspend(boolean s){
+            this.suspend = s;
+        }
+        synchronized void resumeThread(){
+            suspend=false;
+            notify();
+        }
 	
 	boolean isPrime(int n) {
 	    if (n%2==0) return false;
