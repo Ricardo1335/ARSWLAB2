@@ -24,10 +24,6 @@ Creación, puesta en marcha y coordinación de hilos.
 ![](/img/media/nucleos.PNG)
 
 
-#2
-
-![alt text](https://github.com/Ricardo1335/ARSWLAB2/blob/master/img/media/nucleos.PNG)
-
 
 
 ### Parte II 
