@@ -15,20 +15,22 @@ public class Main {
                 pft1.start();
                 pft2.start();
                 while(seconds!=5){
-                Date endDate = new Date();
-                seconds = (int)(endDate.getTime()-startDate.getTime())/1000;
+                    Date endDate = new Date();
+                    seconds = (int)(endDate.getTime()-startDate.getTime())/1000;
                 }
                 pft.setSuspend(true);
                 pft1.setSuspend(true);
                 pft2.setSuspend(true);
+                
                 System.out.println("Press enter to continue...");
                 Scanner scaner = new Scanner(System.in);
                 String in= scaner.nextLine();
                 
+                
                 if(in.equals("")){
-                pft.resumeThread();
-                pft1.resumeThread ();
-                pft2.resumeThread();
+                    pft.resumeThread();
+                    pft1.resumeThread ();
+                    pft2.resumeThread();
                 }
                 
                 

@@ -22,17 +22,17 @@ public class PrimeFinderThread extends Thread{
 				primes.add(i);
 				System.out.println(i);
 			}
-		}synchronized(this){
-                    while(suspend){
-                        try{
-                            this.wait();
-                        }catch(InterruptedException e){
-                            System.out.println("error");
+                    synchronized(this){
+                        while(suspend){
+                            try{
+                                this.wait();
+                            }catch(InterruptedException e){
+                                System.out.println("error");
+                            }
+
                         }
-                        
                     }
                 }
-		
 		
 	}
         public void setSuspend(boolean s){
