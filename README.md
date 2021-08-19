@@ -1,4 +1,4 @@
-
+﻿
 ### Escuela Colombiana de Ingeniería
 
 ### Arquitecturas de Software – ARSW
@@ -24,6 +24,10 @@ Creación, puesta en marcha y coordinación de hilos.
 ![](/img/media/nucleos.PNG)
 
 
+2. en la imagen podemos observar que el programa usa todos los nucleos disponibles para la ejecicón de este pero en menor cantidad.
+
+
+![](/img/media/nucleos2.PNG)
 
 
 ### Parte II 
