@@ -19,7 +19,16 @@ Creación, puesta en marcha y coordinación de hilos.
 3. Lo que se le ha pedido es: debe modificar la aplicación de manera que cuando hayan transcurrido 5 segundos desde que se inició la ejecución, se detengan todos los hilos y se muestre el número de primos encontrados hasta el momento. Luego, se debe esperar a que el usuario presione ENTER para reanudar la ejecución de los mismo.
 ### Respuestas
 1. en la imagen podemos observar que el programa usa todos los nucleos disponibles para la ejecicón de este.
-![](/img/media/nucleos.png)
+
+
+![](/img/media/nucleos.PNG)
+
+
+#2
+
+![alt text](https://github.com/Ricardo1335/ARSWLAB2/blob/master/img/media/nucleos.PNG)
+
+
 
 ### Parte II 
 
